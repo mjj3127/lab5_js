@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battery Percentage with RoboHash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Battery Status</h1>
+    
+    <dl id="battery">
+      <dt>Charging Status:</dt>
+      <dd id="charging-status">Loading...</dd>
+      <dt>Battery Level:</dt>
+      <dd>
+        <output id="charge-level">Loading...</output>
+        <progress id="charge-meter" value="0" max="100"></progress>
+      </dd>
+      <dt>Battery Image:</dt>
+      <dd><img id="battery-image" src="" alt="Battery Image" style="display: none;"></dd>
+    </dl>
+
+    <button id="get-battery">Get Battery Status</button>
+    <div class="error-message" id="error-message"></div>
+  </div>
+
+  <script src="battery.js"></script>
+</body>
+</html>
